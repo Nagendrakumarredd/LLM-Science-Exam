@@ -43,9 +43,8 @@ bash
 Copy code
 python generate_questions.py --subject physics --level highschool
 # Options:
-
---subject: Specify the subject (e.g., physics, chemistry, biology).
---level: Specify the difficulty level (e.g., elementary, middle, highschool, college).
+1) subject: Specify the subject (e.g., physics, chemistry, biology).
+2) level: Specify the difficulty level (e.g., elementary, middle, highschool, college).
 Administering Exams
 To administer an exam, use the administer_exam.py script:
 
