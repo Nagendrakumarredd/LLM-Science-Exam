@@ -7,6 +7,54 @@ Automated Grading: Provide instant, unbiased grading of exam responses.
 Analytics and Reporting: Detailed performance analytics and reporting to track progress and identify areas of improvement.
 Multi-Disciplinary: Supports a wide range of scientific subjects including Physics, Chemistry, Biology, Earth Science, and more.
 Customizable Exams: Create customized exams tailored to specific curricula and difficulty levels.
+
+ # Architecture
+
+                           +--------------------------+
+                          |        Frontend          |
+                          |--------------------------|
+                          | User Interface (React.js)|
+                          | Exam Interface           |
+                          | Admin Dashboard          |
+                          +------------+-------------+
+                                       |
+                                       v
+                          +------------+-------------+
+                          |        API Server        |
+                          |  (Flask/Django REST API) |
+                          +------------+-------------+
+                                       |
+       +--------------------+----------+-----------+--------------------+
+       |                    |                      |                    |
+       v                    v                      v                    v
++-------------+    +----------------+     +---------------+    +----------------+ 
+| Question    |    | Exam           |     | Grading       |    | Analytics and  |
+| Generation  |    | Administration |     | Engine        |    | Reporting      |
++-------------+    +----------------+     +---------------+    +----------------+
+                                       |
+                                       v
+                              +--------+---------+
+                              |     Database     |
+                              |------------------|
+                              | Relational (SQL) |
+                              | User data        |
+                              | Exam data        |
+                              | Questions        |
+                              | Responses        |
+                              | Results          |
+                              +------------------+
+                                       |
+                                       v
+                          +------------+-------------+
+                          | LLM Integration          |
+                          |--------------------------|
+                          | LLM API (e.g., OpenAI)   |
+                          | Generates questions      |
+                          | Grades answers           |
+                          +--------------------------+
+
+
+
 # Installation
 To get started with LLM Science Exam, follow these steps:
 
