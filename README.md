@@ -51,20 +51,10 @@ To administer an exam, use the administer_exam.py script:
 
 bash
 Copy code
-python administer_exam.py --exam_id 12345
-Options:
-
---exam_id: Specify the exam ID to administer.
-Grading Exams
-To grade exam responses, use the grade_exam.py script:
-
-bash
-Copy code
 python grade_exam.py --exam_id 12345 --responses responses.json
 Options:
-
---exam_id: Specify the exam ID to grade.
---responses: Path to the JSON file containing student responses.
+1) exam_id: Specify the exam ID to grade.
+2) responses: Path to the JSON file containing student responses.
 # Contributing
 We welcome contributions from the community! If you would like to contribute to LLM Science Exam, please follow these steps:
 
