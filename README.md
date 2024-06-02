@@ -8,8 +8,7 @@ Analytics and Reporting: Detailed performance analytics and reporting to track p
 Multi-Disciplinary: Supports a wide range of scientific subjects including Physics, Chemistry, Biology, Earth Science, and more.
 Customizable Exams: Create customized exams tailored to specific curricula and difficulty levels.
 
- # Architecture
-
+ # Architecture:    
                            +--------------------------+
                           |        Frontend          |
                           |--------------------------|
